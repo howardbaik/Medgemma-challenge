@@ -1,0 +1,15 @@
+# Model weights (hosted on HuggingFace)
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Data
+example_study/
+model_data/
+model_data.zip
+
+# OS
+.DS_Store
