@@ -19,6 +19,16 @@ The dataset contains **258 questions** (Single Visual QA) across multiple task c
 - **View**: 32 questions - Echocardiographic view identification
 - **Grading**: 14 questions - Severity grading questions (like mild/moderate/severe)
 
+#### Examples by Question Type
+
+| Question Type | Example Question | Options | Answer |
+|---------------|------------------|---------|--------|
+| **Binary** | Is a Pacemaker present? | A: No<br>B: Yes | B |
+| **Diagnosis** | Which of the following conditions is present? | A: Tricuspid Stenosis<br>B: Pulmonary Hypertension<br>C: Right Ventricular Hypertrophy<br>D: Pacemaker/ICD Lead | D |
+| **Descriptive** | Which of the following statements provides the MOST accurate description of the observed findings? | A: The image displays a normal tricuspid valve with no evidence of regurgitation.<br>B: The image shows severe tricuspid stenosis with a markedly elevated pressure gradient across the valve<br>C: The image reveals the presence of a Pacemaker lead, no significant valvular stenosis and regurgitation.<br>D: The image demonstrates tricuspid valve prolapse with mild tricuspid regurgitation. | C |
+| **View** | Which echocardiographic view is displayed? | A: Apical 5-Chamber with Doppler<br>B: Apical 3-Chamber without Doppler<br>C: Parasternal Long Axis with Doppler<br>D: Apical 2-Chamber with Doppler | A |
+| **Grading** | What is the grade of Aortic Stenosis? Can you guess? | A: None/Normal<br>B: Mild<br>C: Moderate<br>D: Severe | D |
+
 ## Task Types
 
 The dataset evaluates the following clinical capabilities:
@@ -52,7 +62,9 @@ The main CSV file (`MIMIC_Echo_1qa_SDE_vFINAL_share_d20260210_111554.csv`) conta
 
 ## Sample
 
-A sample question-answer pair with its corresponding echocardiogram video frame is shown in [assets/Demo_1.png](assets/Demo_1.png).
+A sample question-answer pair with its corresponding echocardiogram video frame is shown below:
+
+![Sample QA Demo](assets/Demo_1.png)
 
 ## Source Data
 
