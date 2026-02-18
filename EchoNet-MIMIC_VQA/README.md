@@ -4,20 +4,43 @@
 
 The EchoNet-MIMIC Visual Question Answering (VQA) dataset is designed to evaluate AI models' ability to understand and interpret echocardiography videos through natural language questions and answers. This dataset combines echocardiogram video data from the MIMIC-IV-Echo database with expert-curated and edited questions covering various aspects of cardiac imaging interpretation (i.e., disease diagnosis, anatomical view recognition, measurement grading, and descriptive analysis).
 
+## Key Strengths
+
+- **Rich Disease Coverage**: 21 unique disease/anatomical targets for single-visual QA, 13 targets for multi-visual QA
+- **Diverse Task Variations**: 5 question types including Binary (Yes/No), Diagnosis, Descriptive, View Recognition, and Grading (severity assessment)
+- **Human-Edited Quality**: All questions and answers are expertly curated and manually edited by clinical experts
+- **High-Quality Visuals**: Only curated, high-quality echocardiogram videos selected from MIMIC-IV-Echo database
+- **Multiple Visual QA**: Includes 18 questions requiring reasoning across 4 different echocardiographic views simultaneously (see [MIMIC_Echo_4qa_BPO_vFINAL_share_d20260213_181852.csv](MIMIC_Echo_4qa_BPO_vFINAL_share_d20260213_181852.csv))
+
 ## Dataset Statistics
 
-The dataset contains **258 questions** (Single Visual QA) across multiple task categories:
+### Single Visual QA Dataset
 
-### Content Types
+The dataset contains **258 questions** across multiple task categories:
+
+#### Content Types
 - **Diagnosis**: 226 questions
 - **View**: 32 questions
 
-### Question Types
+#### Question Types
 - **Binary**: 113 questions - Yes/No questions requiring binary responses
 - **Diagnosis**: 53 questions - Specific diagnostic reasoning questions
 - **Descriptive**: 46 questions - Open-ended descriptive questions about cardiac features
 - **View**: 32 questions - Echocardiographic view identification
 - **Grading**: 14 questions - Severity grading questions (like mild/moderate/severe)
+
+### Multiple Visual QA Dataset
+
+The dataset also includes **18 questions** that require reasoning across **4 different echocardiographic views**:
+
+#### Content Types
+- **Diagnosis**: 18 questions (all multi-view diagnosis tasks)
+
+#### Question Types
+- **Diagnosis**: 10 questions - Multi-view diagnostic reasoning
+- **Descriptive**: 8 questions - Complex descriptive analysis across multiple views
+
+**Disease Coverage**: 13 unique cardiac conditions including Pacemaker, Aortic Stenosis, Tricuspid Valve Regurgitation, Mitral Stenosis, Pericardial Effusion, and more.
 
 #### Examples by Question Type
 
@@ -42,7 +65,11 @@ The dataset evaluates the following clinical capabilities:
 
 ### Data File Structure
 
-The main CSV file (`MIMIC_Echo_1qa_SDE_vFINAL_share_d20260210_111554.csv`) contains the following columns:
+The dataset includes two main CSV files:
+
+#### 1. Single Visual QA (`MIMIC_Echo_1qa_SDE_vFINAL_share_d20260210_111554.csv`)
+
+Contains 258 questions with single echocardiogram video per question. Columns include:
 
 - `question_id`: Unique identifier for each question
 - `study_id`: MIMIC study identifier
@@ -60,11 +87,34 @@ The main CSV file (`MIMIC_Echo_1qa_SDE_vFINAL_share_d20260210_111554.csv`) conta
 - `Final_correct_option`: Correct answer
 - `review_timestamp`: Timestamp of quality review
 
+#### 2. Multiple Visual QA (`MIMIC_Echo_4qa_BPO_vFINAL_share_d20260213_181852.csv`)
+
+Contains 18 questions requiring analysis of 4 different echocardiographic views simultaneously. Additional columns include:
+
+- `mp4_path1/2/3/4`: Paths to 4 different MP4 videos (4 different views)
+- `view1/2/3/4`: Names of the 4 echocardiographic views
+- Other columns similar to Single Visual QA dataset
+
 ## Sample
 
-A sample question-answer pair with its corresponding echocardiogram video frame is shown below:
+Sample question-answer pairs with their corresponding echocardiogram video frames are shown below:
 
-![Sample QA Demo](assets/Demo_1.png)
+<table>
+<tr>
+<td width="50%">
+
+### Single Visual QA Example
+![Single Visual QA Demo](assets/Demo_1.png)
+
+</td>
+<td width="50%">
+
+### Multiple Visual QA Example
+![Multiple Visual QA Demo](assets/Demo_4.png)
+
+</td>
+</tr>
+</table>
 
 ## Source Data
 
