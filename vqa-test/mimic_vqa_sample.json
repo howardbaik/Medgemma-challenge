@@ -1,0 +1,26 @@
+[
+  {
+    "messages_id": "260210SDE0002",
+    "view": "BMode_PLAX_RV_inflow",
+    "question": "Is a Pacemaker visible?",
+    "option_A": "No",
+    "option_B": "Yes",
+    "option_C": "",
+    "option_D": "",
+    "correct_option": "B",
+    "generated_report": "The user uploaded 1 videos, and the corresponding views are: Parasternal_Long.Aorta: There is mild aortic root dilation. [SEP] Aortic Valve: Aortic valve not well visualized. [SEP] IVC: The inferior vena cava is of normal size. [SEP] Left Atrium: Mildly dilated left atrium. [SEP] Left Ventricle: Normal left ventricular size Normal left ventricular systolic function. LV Ejection Fraction is 60 %  Mild left ventricular hypertrophy. Left ventricular diastolic function could not be assessed due to the presence of atrial fibrillation during the study. [SEP] Mitral Valve: Mitral valve leaflets appear mildly thickened. There is mild mitral valve regurgitation. [SEP] Pericardium: Normal pericardium with no pericardial effusion. [SEP] Pulmonary Artery: Estimated PA Pressure is 28 mmHg  PA systolic pressure is normal. [SEP] Pulmonary Veins: Not well visualized. [SEP] Pulmonic Valve: Normal pulmonic valve appearance. Normal pulmonic valve function with trace physiologic regurgitation. [SEP] Resting Segmental Wall Motion Analysis: Total wall motion score is 1.00. There are no regional wall motion abnormalities [SEP] Right Atrium: Mildly dilated right atrium. [SEP] Right Ventricle: Normal right ventricular size. Normal right ventricular systolic function. [SEP] Tricuspid Valve: Normal appearance of the tricuspid valve. Est RV/RA pressure gradient is 25.0 mmHg  There is mild tricuspid regurgitation. [SEP]",
+    "videos": "SDE/Echo_260210SDE0002.mp4"
+  },
+  {
+    "messages_id": "260210SDE0112",
+    "view": "BMode_DOPPLER_A4C_TV",
+    "question": "Which of the following BEST describes the observed tricuspid valve pathology?",
+    "option_A": "The tricuspid valve leaflets are thickened and stenotic, causing restricted blood flow from the right atrium to the right ventricle.",
+    "option_B": "The tricuspid valve leaflets are prolapsing into the right atrium during systole, leading to moderate regurgitation.",
+    "option_C": "The tricuspid valve leaflets exhibit failure to fully coapt, resulting in severe tricuspid regurgitation.",
+    "option_D": "The tricuspid valve appears structurally normal.",
+    "correct_option": "C",
+    "generated_report": "The user uploaded 1 videos, and the corresponding views are: Apical_Doppler.Aorta: The aortic root is normal in size. There is mild fibrocalcific change of the aortic root, consistent with atherosclerosis. [SEP] Aortic Valve: Aortic cusps appear mildly calcified. Trace aortic regurgitation. [SEP] IVC: The inferior vena cava demonstrates no inspiratory collapse, consistent with significantly elevated right atrial pressure (>15 mmHg). [SEP] Left Atrium: Moderately dilated left atrium. [SEP] Left Ventricle: Normal left ventricular size VERY SEVERE left ventricular systolic dysfunction. LV Ejection Fraction is 15 %  Normal left ventricular wall thickness. Left ventricular diastolic function could not be assessed due to the presence of atrial fibrillation during the study. Doppler parameters and/or lateral mitral annular (E`) velocities are consistent with elevated left ventricular filling pressures. [SEP] Mitral Valve: There is restricted coaptation of the anterior and posterior mitral leaflets. There is moderate to severe mitral valve regurgitation. [SEP] Pericardium: Normal pericardium with no pericardial effusion. [SEP] Pulmonary Artery: Estimated PA Pressure is 47.0 mmHg  PA systolic pressure is consistent with moderate pulmonary hypertension. [SEP] Pulmonary Veins: The pulmonary venous flow pattern is diastolic predominant, suggestive of elevated left atrial pressure. [SEP] Pulmonic Valve: Pulmonic valve not well visualized. There is mild pulmonic regurgitation. [SEP] Resting Segmental Wall Motion Analysis: Total wall motion score is 2.00. There is global left ventricular hypokinesis. [SEP] Right Atrium: Mildly dilated right atrium. [SEP] Right Ventricle: Normal right ventricular size. Moderately depressed right ventricular systolic function. [SEP] Tricuspid Valve: Est RV/RA pressure gradient is 32.0 mmHg  There is moderate tricuspid regurgitation. [SEP]",
+    "videos": "SDE/Echo_260210SDE0112.mp4"
+  }
+]
